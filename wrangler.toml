@@ -1,0 +1,14 @@
+name = "cf_ai_api_guard"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Workers AI binding
+[ai]
+binding = "AI"
+
+# KV namespace for storing API analysis history
+# Run: npx wrangler kv namespace create API_HISTORY
+# Then replace the id below with the output
+[[kv_namespaces]]
+binding = "API_HISTORY"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
