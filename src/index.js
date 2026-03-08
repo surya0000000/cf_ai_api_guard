@@ -83,7 +83,7 @@ async function handleAnalyze(request, env) {
 
     const prompt = PROMPT.replace('{{DESCRIPTION}}', description);
 
-    const response = await env.AI.run('@cf/meta/llama-3.3-70b-instruct', {
+    const response = await env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
       prompt,
       max_tokens: 2048,
     });
